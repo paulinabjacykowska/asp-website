@@ -69,6 +69,7 @@ https://user-images.githubusercontent.com/89641881/148701185-2ad196c8-5f9d-411a-
   <li>Gatsby.js</li>
   <li>GraphQL</li>
   <li>Strapi</li>
+  <li>Docker</li>
   <li>Figma</li>
   <li>Git</li>
 </ul>
