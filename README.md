@@ -1,31 +1,78 @@
-### Pierwsze uruchomienie
+<h1 align='center'>
+  <strong>Diploma Catalog</strong>
+</h1>
+
+<p align='center'>
+  <a href='#about'>About</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href='#cms'>CMS</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href='#installation'>Installation</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href='#demo'>Demo</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href='#tech-stack'>Tech Stack</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href='#creators'>Creators</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+</p>
+
+## About
+
+<p>
+  Diploma catalog is a web application designed and created for the students of Academy of Fine Arts in Wrocław.<br>
+  The application was developed in collaboration with the students of Academy of Fine Arts who provided UI design.<br>
+  Main features include: 
+  <ul>
+    <li>viewing list of diploma works</li>
+    <li>viewing diploma works details</li>
+    <li>viewing information about upcoming event</li>
+    <li>viewing information about departments and diplomas created by it's students</li>
+    <li>liking chosen diploma for ease of access</li>
+    <li>adding new diploma works, events and departments</li>
+    <li>editing information about diploma works, events and depaartments</li>
+  </ul>
+</p>
+
+## CMS
+
+<p>
+ For the Content Management System we used Strapi - open source Node.js headless CMS. 
+</p>
+
+## Installation 
+
+If you want to download and run this project: 
 
 #### CMS
 - `npm run develop`
-- Odblokuj endpointy
-  - W panelu admina pójdź do `Ustawienia -> USERS & PERMISSIONS PLUGIN -> Role -> Public -> Uprawniena`
-  - Zaznacz metodę `find` i `findone` przy każdym endpoincie
-  - Zapisz
-- Skonfiguruj tłumaczenia w `/admin/settings/internationalization`. Dodaj język `pl` ustawiony jako domyślny.
-- Utwórz i opublikuj dane w **każdej** kolekcji i każdego języka
-
+- Unblock endpoints
+  - In admin panel: `Settings -> USERS & PERMISSIONS PLUGIN -> Roles -> Public -> Permissions`
+  - Check `find` and `findone` for every endpoint
+  - Save
+- Create and publish data in every collection.
+- 
 #### Website
 
-- Utwórz plik `.env` w głównym folderze, i wklej do nie go zawartość istniejącego już pliku `.env.example`. W razie potrzeby zmień wartości wklejonych zmiennych.
+- Create `.env` file in main folder and paste content of the existing `.env.example` file.
 - `npm run develop`
-- Włącz podpowiedzi GraphQL (dla osób z Webstormem)
-  - Zainstaluj [plugin GraphQL](https://plugins.jetbrains.com/plugin/8097-js-graphql)
-  - Otwórz plik `website/.graphqlconfig`
-  - Kliknij play przy linijce 7. `"url": "http://localhost:8000/___graphql",`
 
 #### Docker
 
-- Instalujemy Dockera [https://docs.docker.com/get-docker/]
-- W głównym folderze wykonujemy komendę `docker-compose up --build`. Komendę tę wykonujemy jedynie za pierwszym razem i za każdym razem, gdy coś doinstalowujemy (czyli gdy zmienia się package.json). Komenda ta będzie się wykonywać dość długo.
-- Przy powtórnych uruchomianiach wykonujemy komendę `docker-compose up`, również w głównym folderze. Komenda ta uruchamia stronę (localhost:8000) oraz deweloperskiego strapiego (localhost:1337/admin).
+- Install [https://docs.docker.com/get-docker/]
+- In main folder run `docker-compose up --build`. You have to run this command every time package.json changes.
+- When package.json doesn't change run `docker-compose up`. This command runs website (localhost:8000) and dev strapi (localhost:1337/admin).
 
-### Rozwiązywanie problemów
+## Demo 
 
-- Po każdej zmianie treści w Strapim należy przeładować aplikację stronki
-- W razie problemów z folderem `.cache`, możesz go usunąć i przeładować aplikację
-- Aby przebudować CMSa należy użyć komendy `npm run build -- --clean`
+Short app walkthrough:
+
+https://user-images.githubusercontent.com/89641881/148701185-2ad196c8-5f9d-411a-ad52-cb6a010519d8.mov
+
+## Tech Stack
+
+<ul>
+  <li>Gatsby.js</li>
+  <li>GraphQL</li>
+  <li>Strapi</li>
+  <li>Figma</li>
+  <li>Git</li>
+</ul>
+  
+## Creators
+Created by [Paulina Jacykowska](https://github.com/paulinabjacykowska), Marcin Szuster and Agnieszka Ryl, students of Wrocław University of Science and Technology.
+
