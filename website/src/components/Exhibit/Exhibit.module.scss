@@ -1,0 +1,56 @@
+@import '../../styles/responsiveness.scss';
+
+.main-container {
+  display: flex;
+  column-gap: 100px;
+  @media screen and (max-width: 955px) {
+    display: block;
+  }
+  @include sm {
+    width: 85%;
+    padding-left: 2.5%;
+  }
+  @include mobile {
+    width: 95%;
+    padding-left: 5% !important;
+  }
+}
+
+.information-title {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 30px;
+  line-height: 36px;
+  margin-bottom: 0px;
+  margin-top: 30px;
+  @include md {
+    font-size: 25px !important;
+    line-height: 25px !important;
+    margin-top: 20px !important;
+  }
+  @include sm {
+    font-size: 20px !important;
+  }
+  @include mobile {
+    font-size: 16px !important;
+    margin-top: 10px !important;
+    line-height: 20px !important;
+  }
+}
+
+.information {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 26px;
+  @include sm {
+    font-size: 15px !important;
+  }
+  @include mobile {
+    font-size: 13px !important;
+    line-height: 15px;
+    margin-top: 11px !important;
+  }
+}

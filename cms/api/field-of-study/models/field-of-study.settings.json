@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "fields-of-study",
+  "info": {
+    "name": "Fields Of Study",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "minLength": 3,
+      "unique": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "department": {
+      "model": "department"
+    }
+  }
+}

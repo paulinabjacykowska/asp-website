@@ -1,0 +1,102 @@
+{
+  "kind": "collectionType",
+  "collectionName": "exhibits",
+  "info": {
+    "name": "Exhibit",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "minLength": 3,
+      "unique": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "start_date": {
+      "type": "datetime",
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      }
+    },
+    "end_date": {
+      "type": "datetime",
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      }
+    },
+    "event": {
+      "type": "component",
+      "repeatable": true,
+      "component": "exhibit.event",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "place": {
+      "type": "component",
+      "repeatable": false,
+      "component": "exhibit.place",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "description": {
+      "type": "richtext",
+      "required": true,
+      "minLength": 3,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "media": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": ["files", "images", "videos"],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "contacts": {
+      "type": "component",
+      "repeatable": true,
+      "required": true,
+      "component": "general.contacts",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    }
+  }
+}

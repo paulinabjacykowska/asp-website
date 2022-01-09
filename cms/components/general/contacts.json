@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_general_contacts",
+  "info": {
+    "name": "contacts",
+    "icon": "arrow-right"
+  },
+  "options": {},
+  "attributes": {
+    "contact": {
+      "type": "string"
+    }
+  }
+}

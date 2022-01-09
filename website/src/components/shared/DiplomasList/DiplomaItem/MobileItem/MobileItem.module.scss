@@ -1,0 +1,25 @@
+.content {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 34px;
+}
+
+.author {
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 10px;
+  font-weight: 400;
+}
+
+.image {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.title {
+  font-size: 18px;
+  line-height: 18px;
+  margin-bottom: 30px;
+  font-weight: 400;
+}

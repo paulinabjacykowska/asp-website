@@ -1,0 +1,47 @@
+@import 'src/styles/constants';
+@import 'src/styles/responsiveness';
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  aspect-ratio: 0.95;
+  padding: 0 40px;
+  position: relative;
+  @include md {
+    aspect-ratio: 1.5;
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+}
+
+.icon {
+  z-index: 10;
+  height: 150px;
+  width: auto;
+  bottom: 85%;
+  left: 80%;
+  path {
+    stroke: black;
+  }
+  @include sm {
+    display: none;
+  }
+  @include md {
+    display: none;
+  }
+}
+.icon-left {
+  top: 85%;
+  left: auto;
+  right: 80%;
+  path {
+    stroke: black;
+  }
+  @include sm {
+    display: none;
+  }
+  @include md {
+    display: none;
+  }
+}

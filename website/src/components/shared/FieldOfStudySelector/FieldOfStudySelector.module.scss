@@ -1,0 +1,33 @@
+@import "src/styles/responsiveness";
+
+.filter-buttons-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 24px 0 40px;
+
+  @include md {
+    padding-left: 18px;
+    padding-right: 30px;
+  }
+
+  & > button {
+    margin-right: 40px;
+    margin-bottom: 40px;
+    @include md {
+      margin: 18px 18px 0 0;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.icon-filter {
+  display: flex;
+  justify-content: flex-end;
+  margin: 0 20px 0 0;
+}
+.margin {
+  margin: 0 30px 60px 0;
+}

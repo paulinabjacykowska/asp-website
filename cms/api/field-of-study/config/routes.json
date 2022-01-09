@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/fields-of-study",
+      "handler": "field-of-study.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/fields-of-study/count",
+      "handler": "field-of-study.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/fields-of-study/:id",
+      "handler": "field-of-study.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/fields-of-study",
+      "handler": "field-of-study.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/fields-of-study/:id",
+      "handler": "field-of-study.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/fields-of-study/:id",
+      "handler": "field-of-study.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

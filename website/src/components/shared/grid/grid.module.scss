@@ -1,0 +1,51 @@
+@use "sass:math";
+@import 'src/styles/responsiveness';
+
+$gutter: 24px;
+$gutter-small: 12px;
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+
+  &--content {
+    width: 100%;
+    flex: 1;
+
+    @include xl {
+      max-width: 80vw;
+    }
+    @include sm {
+      max-width: initial;
+    }
+  }
+}
+
+.grid {
+  padding-left: 0;
+  padding-right: 0;
+  @include sm {
+    padding-left: 18px !important;
+    padding-right: 18px !important;
+  }
+}
+
+.row {
+  margin-left: - math.div($gutter, 2);
+  margin-right: - math.div($gutter, 2);
+  @include sm {
+    margin-left: - math.div($gutter-small, 2) !important;
+    margin-right: - math.div($gutter-small, 2) !important;
+  }
+}
+
+.column {
+  padding-left: math.div($gutter, 2);
+  padding-right: math.div($gutter, 2);
+  @include sm {
+    padding-left: math.div($gutter-small, 2) !important;
+    padding-right: math.div($gutter-small, 2) !important;
+  }
+}

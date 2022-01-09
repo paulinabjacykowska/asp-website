@@ -1,0 +1,27 @@
+@import '../../../../styles/colors';
+
+.button {
+  padding: 0;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+.icon {
+  transition-duration: 200ms;
+  transition-property: fill;
+
+  &-pl path:nth-child(2) {
+    fill: $color-focus;
+  }
+  &-en path:nth-child(3) {
+    fill: $color-focus;
+  }
+
+  &-pl:hover path:nth-child(2) {
+    fill: $color-hover;
+  }
+  &-en:hover path:nth-child(3) {
+    fill: $color-hover;
+  }
+}

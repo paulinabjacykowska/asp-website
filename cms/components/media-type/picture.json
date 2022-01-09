@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_displayed_media_type_picture",
+  "info": {
+    "name": "Picture",
+    "icon": "bars",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "picture": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true,
+      "pluginOptions": {}
+    },
+    "title": {
+      "type": "string",
+      "required": true,
+      "minLength": 3
+    }
+  }
+}

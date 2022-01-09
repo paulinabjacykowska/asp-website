@@ -1,0 +1,17 @@
+@import '../../../../styles/responsiveness.scss';
+
+.mediaContainer {
+  position: relative;
+  margin-top: 105px;
+  @include sm {
+    margin-top: 55px;
+  }
+}
+
+.media {
+  width: 35vw;
+  @include sm {
+    width: 80vw;
+    margin-left: 0 !important;
+  }
+}

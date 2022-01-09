@@ -1,0 +1,23 @@
+@import '../../../../styles/responsiveness.scss';
+
+.left-column-container {
+  flex: 65%;
+  @media screen and (max-width: 955px) {
+    flex: 100% !important;
+  }
+}
+
+.main-description {
+  margin-top: 50px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+  @include md {
+    font-size: 15px !important;
+  }
+  @include mobile {
+    font-size: 13px !important;
+    line-height: 20px !important;
+    margin-top: 30px !important;
+  }
+}

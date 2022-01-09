@@ -1,0 +1,126 @@
+@import '../../../styles/responsiveness.scss';
+
+.description-container {
+  @include xl {
+    column-gap: 230px;
+    margin-top: 170px;
+    margin-bottom: 100px;
+    display: flex;
+  }
+  @include lg {
+    margin-top: 116px !important;
+  }
+  @media screen and (max-width: 1360px) {
+    column-gap: 120px !important;
+  }
+  @media screen and (max-width: 955px) {
+    display: block;
+  }
+  @include sm {
+    width: 80% !important;
+    margin-left: 5%;
+  }
+  @include mobile {
+    width: 90% !important;
+    margin-left: 0px !important;
+    margin-top: 80px !important;
+  }
+}
+
+.image-container {
+  display: flex;
+  flex: 50%;
+  justify-content: center;
+  align-items: center;
+  @media screen and (max-width: 955px) {
+    float: left;
+    flex: 100% !important;
+    margin-right: 25px;
+  }
+  @include mobile {
+    float: none !important;
+    margin-right: 0px !important;
+    margin-left: 0px !important;
+    width: 100vw;
+  }
+}
+
+.text-container {
+  flex: 50%;
+  @media screen and (max-width: 955px) {
+    flex: 100% !important;
+  }
+  @include mobile {
+    margin-left: 10% !important;
+  }
+}
+
+.description-title {
+  @include xl {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 46px;
+    line-height: 50px;
+    font-weight: 700;
+  }
+  @media screen and (max-width: 1793px) {
+    font-size: 40px !important;
+  }
+  @include lg {
+    font-size: 36px !important;
+    line-height: 40px !important;
+  }
+  @media screen and (max-width: 1360px) {
+    font-size: 30px !important;
+  }
+  @include sm {
+    font-size: 24px !important;
+    line-height: 25px !important;
+  }
+  @include mobile {
+    margin-top: -30px;
+  }
+  @media screen and (max-width: 401px) {
+    margin-top: -40px !important;
+  }
+  @media screen and (max-width: 375px) {
+    margin-top: -80px !important;
+  }
+}
+
+.description-text {
+  @include xl {
+    font-family: 'Open Sans', sans-serif;
+    text-align: justify;
+    font-weight: normal;
+    font-size: 24px;
+    letter-spacing: -0.015em;
+    margin-bottom: 40px;
+  }
+  @media screen and (max-width: 1793px) {
+    font-size: 21px !important;
+    margin-bottom: 30px !important;
+  }
+  @include lg {
+    font-size: 18px !important;
+    margin-bottom: 20px !important;
+  }
+  @media screen and (max-width: 1360px) {
+    font-size: 16px !important;
+    margin-bottom: 15px !important;
+  }
+  @include sm {
+    font-size: 15px !important;
+    margin-bottom: 12px !important;
+  }
+}
+
+.informationImage {
+  width: 35vw;
+  height: auto;
+  @include mobile {
+    width: 90%;
+    z-index: -1;
+    margin-top: -50px;
+    margin-bottom: 40px;
+  }
+}

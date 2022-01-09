@@ -1,0 +1,13 @@
+@import '../../../styles/responsiveness.scss';
+
+.media-list-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+  justify-content: space-between;
+  @include sm {
+    flex-direction: column;
+  }
+}

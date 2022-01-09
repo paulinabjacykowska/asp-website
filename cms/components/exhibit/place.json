@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_exhibit_place",
+  "info": {
+    "name": "place"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "minLength": 3
+    },
+    "address": {
+      "type": "string",
+      "required": true,
+      "minLength": 3
+    }
+  }
+}

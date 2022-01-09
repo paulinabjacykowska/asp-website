@@ -1,0 +1,136 @@
+@import '../../styles/responsiveness.scss';
+
+.vertical-lines {
+  @include xl {
+    width: 0.05vw;
+    height: 100%;
+    position: fixed;
+    margin-top: -73px;
+  }
+  @include lg {
+    width: 0.1vw;
+  }
+}
+
+.header-container {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 98px;
+  @include sm {
+    margin-top: 40px;
+    flex-direction: column;
+    margin-bottom: 20px;
+    margin-left: 19px;
+  }
+}
+
+.titles-container {
+  width: 40vw;
+  @include sm {
+    width: 75vw;
+  }
+}
+
+.title {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 58px;
+  line-height: 64px;
+  @include sm {
+    font-size: 28px;
+    line-height: 32px;
+  }
+}
+
+.subtitle {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 36px;
+  line-height: 40px;
+  @include sm {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 10px;
+  }
+}
+
+.icons-container {
+  display: flex;
+  flex-direction: row;
+  margin-right: 5vw;
+  margin-top: 32px;
+  @include sm {
+    margin-top: 18px;
+    margin-right: 0;
+    align-self: flex-end;
+  }
+}
+
+.information-main-title {
+  font-size: 20px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  line-height: 30px;
+  @include sm {
+    margin-top: 20px;
+  }
+}
+
+.information-title {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 26px;
+  @include sm {
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
+
+.information {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 18px;
+  line-height: 26px;
+  margin-bottom: 30px;
+  @include sm {
+    font-size: 16px;
+    line-height: 22px;
+    margin-bottom: 20px;
+  }
+}
+
+.contact {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.description-container {
+  margin-top: 100px;
+  width: 40vw;
+  @include sm {
+    margin-top: 30px;
+    width: 100%;
+    padding-left: 19px;
+    padding-right: 19px;
+  }
+}
+
+.description {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 26px;
+}

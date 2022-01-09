@@ -1,0 +1,20 @@
+@import '../../../../styles/colors';
+
+.button {
+  padding: 0;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+
+  &:hover .icon path {
+    stroke: $color-hover;
+  }
+  &:focus .icon path {
+    stroke: $color-focus;
+  }
+}
+
+.icon {
+  transition-duration: 200ms;
+  transition-property: all;
+}

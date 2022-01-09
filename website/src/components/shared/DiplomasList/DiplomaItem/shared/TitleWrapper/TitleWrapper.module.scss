@@ -1,0 +1,83 @@
+.container-root {
+  position: relative;
+  font-family: 'Space Grotesk', serif;
+  cursor: pointer;
+
+  transition: 200ms ease-out;
+  transition-property: transform;
+
+  &:hover {
+    transform: scale(1.03);
+
+    .content-root {
+      z-index: 1 !important;
+    }
+
+    .black-layer {
+      opacity: 0.3;
+    }
+
+    .title-root {
+      z-index: 3 !important;
+
+      .title-container {
+        transform: translateY(0);
+        opacity: 1;
+      }
+
+      .black-layer {
+        opacity: 0.65;
+      }
+    }
+  }
+}
+
+.black-layer {
+  position: absolute;
+  inset: 0;
+  background: black;
+  opacity: 0;
+
+  transition: ease-in 150ms;
+  transition-property: opacity;
+}
+
+.title-container {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  width: 80%;
+  color: white;
+
+  transition: ease-out 200ms;
+  transform: translateY(20px);
+  opacity: 0;
+
+  .title {
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 36px;
+  }
+
+  .year {
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 32px;
+  }
+}
+
+.additional-info {
+  position: absolute;
+  left: 100%;
+  bottom: 0;
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+  margin-left: 2px;
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+
+  font-size: 16px;
+  line-height: 20px;
+}

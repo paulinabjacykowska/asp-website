@@ -1,0 +1,30 @@
+@import './src/styles/responsiveness.scss';
+
+.description-container {
+  @include md {
+    margin-top: 30px !important;
+    margin-bottom: 30px;
+  }
+  margin-bottom: 50px;
+  padding-left: 0px;
+  margin-top: 50px;
+}
+
+.description {
+  font-family: 'Open Sans', sans-serif;
+  text-align: justify;
+  font-weight: normal;
+  font-size: 18px;
+  letter-spacing: -0.015em;
+  columns: 2;
+  column-gap: 45px;
+  @include md {
+    font-size: 15px !important;
+  }
+  @include mobile {
+    font-size: 13px !important;
+    line-height: 20px !important;
+    margin-top: 30px !important;
+    columns: 1 !important;
+  }
+}

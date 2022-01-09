@@ -1,0 +1,23 @@
+@import '../../../../styles/responsiveness.scss';
+
+.right-column-container {
+  flex: 35%;
+  margin-top: 50px;
+  @media screen and (max-width: 955px) {
+    flex: 100% !important;
+    margin-top: 0px !important;
+  }
+}
+
+.image {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  width: 100%;
+  @media screen and (max-width: 955px) {
+    margin-bottom: 30px !important;
+  }
+  @include mobile {
+    margin-top: 30px !important;
+    margin-bottom: 10px !important;
+  }
+}

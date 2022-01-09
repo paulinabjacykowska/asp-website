@@ -1,0 +1,132 @@
+{
+  "kind": "collectionType",
+  "collectionName": "degrees",
+  "info": {
+    "name": "Degree",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "minLength": 3,
+      "unique": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "author": {
+      "type": "string",
+      "required": true,
+      "minLength": 3,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "description": {
+      "type": "richtext",
+      "minLength": 3,
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "best_degree": {
+      "type": "boolean",
+      "default": false,
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      }
+    },
+    "contacts": {
+      "type": "component",
+      "repeatable": true,
+      "component": "general.contacts",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "degree_media": {
+      "type": "dynamiczone",
+      "components": [
+        "media-type.picture",
+        "media-type.gallery",
+        "media-type.video"
+      ],
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "degree_placeholder": {
+      "type": "dynamiczone",
+      "components": [
+        "media-type.picture",
+        "media-type.gallery",
+        "media-type.video"
+      ],
+      "required": true,
+      "max": 1,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "year": {
+      "type": "integer",
+      "min": 1945,
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      }
+    },
+    "field_of_study": {
+      "model": "field-of-study"
+    },
+    "promoters": {
+      "type": "component",
+      "repeatable": true,
+      "component": "degree.promoter",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "theme": {
+      "type": "enumeration",
+      "enum": ["light", "dark"],
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      }
+    }
+  }
+}

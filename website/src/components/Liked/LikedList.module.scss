@@ -1,0 +1,25 @@
+@import "../../styles/responsiveness";
+.title {
+  font-size: 74px;
+  line-height: 80px;
+  margin: 100px 0 100px 0;
+  font-family: 'Poppins', sans-serif;
+  color: #000000;
+  font-weight: 800;
+  @include sm {
+    font-size: 34px;
+    line-height: 42px;
+    margin: 40px 0;
+  }
+}
+.grid {
+  max-width:1740px;
+  @include sm {
+    margin-bottom: 60px !important;
+  }
+}
+.buttonContainer{
+  width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+}

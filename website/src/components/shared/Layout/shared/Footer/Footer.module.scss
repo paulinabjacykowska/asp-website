@@ -1,0 +1,84 @@
+@import 'src/styles/responsiveness';
+
+.background-orange {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #ff5100;
+  padding-right: 70px;
+  margin-top: 70px;
+}
+
+.title {
+  font-weight: bold;
+}
+
+.space {
+  padding: 0 0 30px 0;
+}
+
+.space-row {
+  padding: 70px 0 30px 0;
+}
+.logo-row {
+  padding: 100px 0;
+}
+
+.icon {
+  width: 22px;
+  height: 22px;
+  margin-right: 35px;
+  & path {
+    fill: black;
+  }
+}
+.icon-white path {
+  fill: white;
+}
+
+.logo {
+  width: 100%;
+  height: auto;
+}
+
+.logo-white path {
+  fill: white;
+}
+
+p {
+  margin-bottom: 0;
+}
+
+.background-black {
+  background-color: black;
+  color: white;
+}
+.link {
+  color: black;
+  text-decoration: underline;
+}
+.bar {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  height: 1px;
+  background-color: black;
+}
+.bar-white {
+  background-color: white;
+}
+.bar-container {
+  position: relative;
+  height: 40px;
+  width: 100%;
+}
+.link-white {
+  color: white;
+}
+@media screen and (max-width: 845px) {
+  .background-orange {
+    padding: 0;
+  }
+  .logo-row {
+    padding: 0;
+    justify-content: space-between;
+  }
+}

@@ -1,0 +1,16 @@
+@use "sass:math";
+@import 'src/styles/constants';
+@import 'src/styles/responsiveness';
+
+.image {
+  max-height: $grid-column-height * math.div(90%, 100%);
+  max-width: 600px;
+  width: 100%;
+  margin: 0;
+
+  @include mobile {
+    width: 100%;
+    max-width: initial;
+    max-height: initial;
+  }
+}

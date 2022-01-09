@@ -1,0 +1,14 @@
+.textContainer {
+  display: flex;
+  flex-direction: row;
+}
+
+.text {
+  font-family:'Space Grotesk', serif ;
+  font-size: 9vw;
+  white-space: nowrap;
+  font-weight: 400;
+  margin-right: 45px;
+  line-height: 200px;
+
+}

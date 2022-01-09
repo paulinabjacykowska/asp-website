@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_displayed_media_type_gallery",
+  "info": {
+    "name": "Gallery",
+    "icon": "border-all",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "pictures": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true,
+      "pluginOptions": {}
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "square",
+        "rectangle_horizontal",
+        "rectangle_vertical"
+      ],
+      "required": true,
+      "default": "rectangle_horizontal"
+    }
+  }
+}

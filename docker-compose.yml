@@ -1,0 +1,21 @@
+version: '3'
+services:
+  website:
+    build:
+      context: ./website
+      dockerfile: Dockerfile
+    volumes:
+      - ./website/src:/website/src
+    ports:
+      - '8000:8000'
+    depends_on:
+      - strapi
+
+  strapi:
+    build:
+      context: ./cms
+      dockerfile: Dockerfile
+    volumes:
+      - ./cms:/srv/cms
+    ports:
+      - '1337:1337'

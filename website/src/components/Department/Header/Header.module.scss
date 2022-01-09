@@ -1,0 +1,13 @@
+@import "src/styles/responsiveness";
+
+.description {
+  font-size: 18px;
+  line-height: 26px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.icon-container {
+  @include md {
+    display: none;
+  }
+}

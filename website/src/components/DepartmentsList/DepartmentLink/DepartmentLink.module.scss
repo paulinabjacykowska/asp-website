@@ -1,0 +1,38 @@
+.root {
+  padding: 15px;
+}
+
+.link {
+  box-shadow: rgba(0, 0, 0, 0.2) 0 4px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 50px;
+  width: 100%;
+  height: 500px;
+  color: black;
+  text-decoration: underline !important;
+
+  font-family: Poppins, serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 30px;
+  line-height: 45px;
+
+  transition: 100ms ease-out;
+  transition-property: transform;
+
+  &:hover, &:focus {
+    text-decoration: none;
+    color: black;
+    transform: scale(1.01);
+  }
+}
+
+.icon {
+  flex: 1;
+  aspect-ratio: 1;
+  margin-bottom: 40px;
+}

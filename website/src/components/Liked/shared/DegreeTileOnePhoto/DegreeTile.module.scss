@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+@import "../../../../styles/responsiveness";
+
+.container {
+  width: 100%;
+}
+.row {
+  display: flex;
+  width: 100%;
+}
+
+.photo {
+  width: 100%;
+  aspect-ratio: 1.5;
+  object-fit: contain;
+}
+.text-section {
+  padding-left: 40px;
+  color: black;
+  padding-right: 40px;
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
+
+  &--reverse {
+    border-left: 0;
+    border-right: 1px solid black;
+  }
+}
+.title{
+  font-weight: bold;
+  font-family: 'Space Grotesk', serif;
+  font-size: 30px;
+  line-height: 36px;
+  color: black;
+
+  @include sm {
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 700;
+  }
+}
+.author{
+  padding-top: 20px;
+  font-family: 'Space Grotesk', serif;
+  font-size: 24px;
+  line-height: 32px;
+  color: black;
+  @include sm {
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 400;
+  }
+
+}
+.links {
+  padding-top: 60px;
+  font-family: 'Open Sans', serif;
+  font-size: 24px;
+  line-height: 32px;
+  color: #0500FF;
+}
+.arrow{
+  width: 30px;
+  height: 36px;
+  margin: 0 10px 0 0;
+}
+.link-text {
+  font-size: 20px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.marginBottom {
+  margin-bottom: 60px;
+}
+.reverse {
+  flex-direction: row-reverse;
+}
+
+.link {
+  display: flex;
+  color: #0500FF;
+  margin-bottom: 15px;
+}
+

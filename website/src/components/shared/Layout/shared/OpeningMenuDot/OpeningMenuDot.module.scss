@@ -1,0 +1,28 @@
+@import 'src/styles/responsiveness';
+
+.button {
+  position: absolute;
+  top: 30px;
+  right: 18px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 0;
+  background: black;
+  cursor: pointer;
+
+  &--inverted {
+    background: white;
+  }
+
+  &:hover {
+    opacity: 0.9;
+  }
+  @include xl {
+    display: none;
+  }
+
+  @include mobile {
+    display: initial;
+  }
+}

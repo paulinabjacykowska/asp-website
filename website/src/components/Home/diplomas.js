@@ -1,0 +1,136 @@
+export const diplomas = [
+  {
+    id: 0,
+    type: 'single',
+    url: 'https://lh3.google.com/u/1/d/1jdRwuc9-TWec5V-MgSQiV3xDcSS11eSV=w1920-h976-iv1',
+    title:
+      'Piękne udręki – ikebana jako pretekst do obserwacji konfliktów natury i człowieka',
+    author: 'Marcelina Kajewska',
+    fieldOfStudy: 'Grafika',
+    year: 2018,
+  },
+  {
+    id: 0,
+    type: 'single',
+    url: 'https://lh3.google.com/u/1/d/162JjgiWs6DpHhjPtsqEFi7pn9zFYlw_Y=w1358-h976-iv1',
+    title:
+      'Piękne udręki – ikebana jako pretekst do obserwacji konfliktów natury i człowieka',
+    author: 'Marcelina Kajewska',
+    fieldOfStudy: 'Grafika',
+    year: 2018,
+  },
+  {
+    id: 1,
+    type: 'single',
+    url: 'https://lh3.google.com/u/1/d/1stPSOAbQgA1Th4wpYuG2SY6wkuhgZCir=w1358-h976-iv1',
+    title:
+      'Piękne udręki – ikebana jako pretekst do obserwacji konfliktów natury i człowieka',
+    author: 'Marcelina Kajewska',
+    fieldOfStudy: 'Grafika',
+    year: 2018,
+  },
+  {
+    id: 2,
+    type: 'gallery-rectangle',
+    urls: [
+      'https://lh3.google.com/u/1/d/1ZpOLx8PPoAwF7_HdFiJ4jKiT5R-CHNi-=w1358-h976-iv1',
+      'https://lh3.google.com/u/1/d/193DknQkKomQ8t-2I7NT5kSK0gV10r5mk=w1358-h976-iv1',
+      'https://lh3.google.com/u/1/d/1nvJ-HhZODTRzcx8M-GKswLbSw4jVrlAh=w1358-h976-iv1',
+    ],
+    title:
+      'Piękne udręki – ikebana jako pretekst do obserwacji konfliktów natury i człowieka',
+    author: 'Marcelina Kajewska',
+    fieldOfStudy: 'Grafika',
+    year: 2018,
+    isTitleWhite: true,
+  },
+  {
+    id: 3,
+    type: 'single',
+    url: 'https://lh3.google.com/u/1/d/1F-QBboc_3HlWfHE7i1QZ7Y1exHWTwL9K=w1358-h976-iv1',
+    title:
+      'Piękne udręki – ikebana jako pretekst do obserwacji konfliktów natury i człowieka',
+    author: 'Marcelina Kajewska',
+    fieldOfStudy: 'Grafika',
+    year: 2018,
+    isTitleWhite: true,
+  },
+  {
+    id: 4,
+    type: 'single',
+    url: 'https://lh3.google.com/u/1/d/1l5rkzL7d_-LKr1GWK50SmTpvOIRN5zr3=w1358-h976-iv1',
+    title:
+      'Piękne udręki – ikebana jako pretekst do obserwacji konfliktów natury i człowieka',
+    author: 'Marcelina Kajewska',
+    fieldOfStudy: 'Grafika',
+    year: 2018,
+  },
+  {
+    id: 5,
+    type: 'single',
+    url: 'https://lh3.google.com/u/1/d/1EC6I5WAn4uEZ2f-sBK8fluK_tCyZa20e=w1358-h976-iv1',
+    title:
+      'Piękne udręki – ikebana jako pretekst do obserwacji konfliktów natury i człowieka',
+    author: 'Marcelina Kajewska',
+    fieldOfStudy: 'Grafika',
+    year: 2018,
+  },
+  {
+    id: 5,
+    type: 'gallery-rectangle',
+    urls: [
+      'https://lh3.google.com/u/1/d/1kbI7VeptdbWWu-JbwmmxWKeAbm3-1ir8=w1358-h976-iv1',
+      'https://lh3.google.com/u/1/d/1jkuzyDpIuaUKMdgCq1sLbIfJ3FmVttzT=w1358-h976-iv1',
+    ],
+    title:
+      'Piękne udręki – ikebana jako pretekst do obserwacji konfliktów natury i człowieka',
+    author: 'Marcelina Kajewska',
+    fieldOfStudy: 'Grafika',
+    year: 2018,
+    isTitleWhite: true,
+  },
+  {
+    id: 6,
+    type: 'gallery',
+    urls: [
+      'https://lh3.google.com/u/1/d/1FHvb-_cptYBVVpExDqURsZ_ZU0QS5562=w1358-h976-iv1',
+      'https://lh3.google.com/u/1/d/1_JvxN3AWY3HRLabUwsY0Br0RHyaaQ4Io=w1358-h976-iv1',
+      'https://lh3.google.com/u/1/d/1Fx1pG_Y5ZsOyqd9AAl3wPPcnn_JyYQIN=w1358-h976-iv1',
+    ],
+    title:
+      'Piękne udręki – ikebana jako pretekst do obserwacji konfliktów natury i człowieka',
+    author: 'Marcelina Kajewska',
+    fieldOfStudy: 'Grafika',
+    year: 2018,
+    isTitleWhite: true,
+  },
+  {
+    id: 7,
+    type: 'single',
+    url: 'https://lh3.google.com/u/1/d/17lqc5AeYmYxYp22dUh22snx6dSy7LdDX=w1358-h976-iv1',
+    title: 'O potrzebie własnego miejsca',
+    author: 'Marcin Szuster',
+    fieldOfStudy: 'Sztuka mediów',
+    year: 2018,
+    isTitleWhite: true,
+  },
+  {
+    id: 8,
+    type: 'single',
+    url: 'https://lh3.google.com/u/1/d/1Zq44myYk2ogc42SxKPaqfJf04ejWnBEA=w1358-h976-iv1',
+    title: 'O potrzebie własnego miejsca',
+    author: 'Marcin Szuster',
+    fieldOfStudy: 'Sztuka mediów',
+    year: 2018,
+    isTitleWhite: true,
+  },
+  {
+    id: 9,
+    type: 'single',
+    url: 'https://lh3.google.com/u/1/d/14CNUkwEj_ymFddmcmW74mIbVcwK1uLOb=w1358-h976-iv1',
+    title: 'O potrzebie własnego miejsca',
+    author: 'Marcin Szuster',
+    fieldOfStudy: 'Sztuka mediów',
+    year: 2018,
+  },
+];

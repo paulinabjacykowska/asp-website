@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/best-degrees",
+      "handler": "best-degrees.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/best-degrees",
+      "handler": "best-degrees.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/best-degrees",
+      "handler": "best-degrees.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

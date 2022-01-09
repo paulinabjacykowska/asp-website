@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_degree_promoters",
+  "info": {
+    "name": "promoter",
+    "icon": "user-graduate"
+  },
+  "options": {},
+  "attributes": {
+    "promoter_name": {
+      "type": "string",
+      "required": true,
+      "minLength": 3
+    },
+    "title": {
+      "type": "string",
+      "required": true,
+      "minLength": 3
+    },
+    "subtitle": {
+      "type": "string",
+      "required": true,
+      "minLength": 3
+    }
+  }
+}

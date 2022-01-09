@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_exhibit_events",
+  "info": {
+    "name": "event"
+  },
+  "options": {},
+  "attributes": {
+    "event_type": {
+      "type": "string",
+      "required": true,
+      "minLength": 3
+    },
+    "event_date": {
+      "type": "datetime",
+      "required": true
+    }
+  }
+}

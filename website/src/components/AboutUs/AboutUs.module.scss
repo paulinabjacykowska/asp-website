@@ -1,0 +1,80 @@
+@import '../../styles/responsiveness.scss';
+
+.video {
+  margin-top: 120px;
+  margin-bottom: 120px;
+  width: 100%;
+  height: auto;
+  @media screen and (max-width: 955px) {
+    margin-top: 0px;
+    margin-bottom: 70px;
+  }
+  @include sm {
+    width: 80%;
+    margin-left: 5%;
+  }
+  @include mobile {
+    width: 90% !important;
+    margin-bottom: 150px !important;
+    margin-top: -30px !important;
+  }
+}
+
+.history {
+  @include xl {
+    width: 30%;
+    position: relative;
+    top: -400px;
+  }
+  @media screen and (max-width: 1793px) {
+    top: -350px;
+  }
+  @include lg {
+    top: -300px;
+  }
+  @media screen and (max-width: 1360px) {
+    top: -250px;
+  }
+  @include md {
+    top: -200px !important;
+  }
+  @media screen and (max-width: 902px) {
+    top: 30px !important;
+    margin-bottom: 250px;
+  }
+}
+
+.historyText {
+  @include xl {
+    font-family: 'Open Sans', sans-serif;
+    text-align: justify;
+    font-weight: normal;
+    font-size: 24px;
+    letter-spacing: -0.015em;
+    margin-bottom: 40px;
+  }
+  @media screen and (max-width: 1793px) {
+    font-size: 21 !important;
+    margin-bottom: 30px !important;
+  }
+  @include lg {
+    font-size: 18px !important;
+    margin-bottom: 20px !important;
+  }
+  @media screen and (max-width: 1360px) {
+    font-size: 16px !important;
+    margin-bottom: 15px !important;
+  }
+  @media screen and (max-width: 902px) {
+    width: 100% !important;
+  }
+  @include sm {
+    width: 80% !important;
+    margin-left: 5%;
+    font-size: 15px !important;
+    margin-bottom: 12px !important;
+  }
+  @include mobile {
+    margin-left: 10%;
+  }
+}
